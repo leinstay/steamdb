@@ -5,7 +5,7 @@ The data is automatically updated and uploaded to Github once a month.
 
 Live preview of this data used in real project: https://gamegauntlets.com
 
-Data example::
+Data example:
 ```json
 {
    "sid":620,
