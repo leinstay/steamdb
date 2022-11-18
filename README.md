@@ -1,1 +1,3 @@
-# Steam Video Game Database with additional data from Steam Spy, GameFAQs, Metacritic, IGDB and HLTB
+# Steam Video Game Database
+
+With additional data from Steam Spy, GameFAQs, Metacritic, IGDB and HLTB
