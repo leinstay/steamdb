@@ -2,6 +2,8 @@
 
 All games available on Steam with prices and additional data from Steam Spy, GameFAQs, Metacritic, IGDB and HLTB.
 
+Live preview of this data used in real project: https://gamegauntlets.com
+
 Data example:
 ```json
 {
