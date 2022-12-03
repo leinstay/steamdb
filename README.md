@@ -1,11 +1,9 @@
 # Steam Video Game Database
 
 JSON file of all games available on Steam with prices and additional data from Steam Spy, GameFAQs, Metacritic, IGDB and HLTB. 
-The data is automatically updated and uploaded to Github once a month.
+The data is automatically updated and uploaded to Github once a month. [Live preview](https://gamegauntlets.com).
 
-Live preview of this data used in real project: https://gamegauntlets.com
-
-Data example:
+Schema example:
 ```json
 {
    "sid":620,
