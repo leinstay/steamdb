@@ -5,15 +5,15 @@ merged from Steam, GOG, SteamSpy, GameFAQs, Metacritic, IGDB, HowLongToBeat, Wik
 
 Updated nightly at 23:48 UTC.
 
-_Generated 2026-10-07T23:50:31.627Z._
+_Generated 2026-10-08T23:49:48.895Z._
 
 ## Download
 
 | File | Rows | Size |
 |---|---|---|
-| [`steamdb.json`](https://github.com/leinstay/steamdb/releases/latest/download/steamdb.json) | 190,451 | 513.0 MB |
-| [`steamdb.min.json`](https://github.com/leinstay/steamdb/releases/latest/download/steamdb.min.json) | 190,451 | 348.3 MB |
-| [`steamdb.min.json.gz`](https://github.com/leinstay/steamdb/releases/latest/download/steamdb.min.json.gz) | 190,451 | 53.8 MB |
+| [`steamdb.json`](https://github.com/leinstay/steamdb/releases/latest/download/steamdb.json) | 190,806 | 514.0 MB |
+| [`steamdb.min.json`](https://github.com/leinstay/steamdb/releases/latest/download/steamdb.min.json) | 190,806 | 349.0 MB |
+| [`steamdb.min.json.gz`](https://github.com/leinstay/steamdb/releases/latest/download/steamdb.min.json.gz) | 190,806 | 53.9 MB |
 
 Previous dump: see the [releases page](https://github.com/leinstay/steamdb/releases).
 
@@ -24,57 +24,57 @@ Previous dump: see the [releases page](https://github.com/leinstay/steamdb/relea
 
 | Key | Type | Source | Coverage | Description |
 |---|---|---|---|---|
-| `id` | integer | gamegauntlets | 100.0% (190,451) | catalog id, stable across updates |
-| `kind` | string | gamegauntlets | 100.0% (190,451) | 'steam' or 'gog_exclusive' |
-| `name` | string | gamegauntlets | 100.0% (190,451) | game title |
-| `image` | string | gamegauntlets | 100.0% (190,359) | header image URL |
-| `description` | string | gamegauntlets | 99.9% (190,306) | English store description (raw HTML) |
-| `steam_appid` | integer | steam | 98.8% (188,141) | Steam appid |
-| `steam_url` | string | steam | 98.8% (188,141) | Steam store page URL |
-| `gog_id` | integer | gog | 3.6% (6,949) | GOG catalog id |
-| `gog_url` | string | gog | 3.8% (7,282) | GOG store page URL |
-| `release_date` | date (`YYYY-MM-DD`) | gamegauntlets | 71.9% (136,877) | cross-source consensus release date |
-| `release_precision` | string | gamegauntlets | 71.9% (136,877) | day/month/quarter/year/unknown |
-| `early_access_date` | date (`YYYY-MM-DD`) | steam | 6.3% (12,065) | date the game entered Early Access, if it did |
-| `store_release_date` | date (`YYYY-MM-DD`) | gamegauntlets | 69.6% (132,643) | store listing date (may be a re-listing, not the true release date) |
-| `price_usd` | integer | gamegauntlets | 60.9% (115,976) | USD list price, cents |
-| `price_final_usd` | integer | gamegauntlets | 60.9% (115,976) | USD price after discount, cents |
-| `discount_percent` | integer | gamegauntlets | 59.3% (112,994) | discount percent, 0..100 |
-| `platforms` | array of strings | gamegauntlets | 100.0% (190,434) | WIN/MAC/LNX |
-| `developers` | array of strings | gamegauntlets | 99.9% (190,339) | developer names |
-| `publishers` | array of strings | gamegauntlets | 99.8% (190,087) | publisher names |
-| `languages` | array of strings | gamegauntlets | 99.9% (190,241) | interface language names |
-| `voiceovers` | array of strings | gamegauntlets | 44.6% (84,879) | voiceover language names |
-| `categories` | array of strings | gamegauntlets | 100.0% (190,395) | store category tags |
-| `genres` | array of strings | gamegauntlets | 99.9% (190,355) | genre tags |
-| `tags` | array of strings | gamegauntlets | 36.9% (70,333) | community tags |
-| `achievements` | integer | steam | 39.0% (74,299) | achievement count |
-| `steam_reviews_percent` | integer | steam | 62.9% (119,878) | all-time positive review share, 0..100 |
-| `steam_reviews_count` | integer | steam | 63.6% (121,118) | all-time review count |
-| `steam_reviews_label` | string | steam | 41.7% (79,509) | Steam's own label ("Very Positive", ...), null under 10 votes |
-| `steam_recent_percent` | integer | steam | 54.7% (104,163) | last ~30 days positive review share, 0..100 |
-| `steam_recent_count` | integer | steam | 54.7% (104,163) | last ~30 days review count |
-| `steam_recent_label` | string | steam | 5.1% (9,635) | recent-reviews label, null under 10 votes |
-| `steamspy_owners` | integer | steamspy | 48.3% (91,984) | owners estimate, lower bound |
-| `average_playtime_hours` | number | gamegauntlets | 33.0% (62,876) | resolved average playtime, decimal hours |
-| `average_playtime_source` | string | gamegauntlets | 33.0% (62,876) | which source produced average_playtime_hours |
-| `hltb_url` | string | hltb | 24.7% (46,996) | HowLongToBeat page URL |
-| `hltb_main_hours` | number | hltb | 14.8% (28,204) | main story hours, decimal |
-| `hltb_complete_hours` | number | hltb | 100.0% (190,451) | completionist hours, decimal |
-| `gamefaqs_url` | string | gamefaqs | 41.3% (78,738) | GameFAQs product page URL |
-| `gamefaqs_difficulty` | string | gamefaqs | 11.0% (20,866) | GameFAQs difficulty label |
-| `gamefaqs_rating` | number | gamefaqs | 11.9% (22,693) | GameFAQs rating, 0..5 |
-| `metacritic_url` | string | metacritic | 87.2% (166,059) | Metacritic page URL |
-| `metacritic_score` | integer | metacritic | 4.7% (8,958) | critic score, 0..100 |
-| `metacritic_reviews` | integer | metacritic | 4.4% (8,432) | critic review count |
-| `metacritic_user_score` | integer | metacritic | 6.5% (12,302) | user score, 0..100 |
-| `igdb_url` | string | igdb | 61.0% (116,250) | IGDB page URL |
+| `id` | integer | gamegauntlets | 100.0% (190,806) | catalog id, stable across updates |
+| `kind` | string | gamegauntlets | 100.0% (190,806) | 'steam' or 'gog_exclusive' |
+| `name` | string | gamegauntlets | 100.0% (190,806) | game title |
+| `image` | string | gamegauntlets | 100.0% (190,714) | header image URL |
+| `description` | string | gamegauntlets | 99.9% (190,662) | English store description (raw HTML) |
+| `steam_appid` | integer | steam | 98.8% (188,492) | Steam appid |
+| `steam_url` | string | steam | 98.8% (188,492) | Steam store page URL |
+| `gog_id` | integer | gog | 3.6% (6,955) | GOG catalog id |
+| `gog_url` | string | gog | 3.8% (7,288) | GOG store page URL |
+| `release_date` | date (`YYYY-MM-DD`) | gamegauntlets | 71.8% (137,015) | cross-source consensus release date |
+| `release_precision` | string | gamegauntlets | 71.8% (137,015) | day/month/quarter/year/unknown |
+| `early_access_date` | date (`YYYY-MM-DD`) | steam | 6.3% (12,073) | date the game entered Early Access, if it did |
+| `store_release_date` | date (`YYYY-MM-DD`) | gamegauntlets | 69.6% (132,770) | store listing date (may be a re-listing, not the true release date) |
+| `price_usd` | integer | gamegauntlets | 60.8% (116,096) | USD list price, cents |
+| `price_final_usd` | integer | gamegauntlets | 60.8% (116,096) | USD price after discount, cents |
+| `discount_percent` | integer | gamegauntlets | 59.3% (113,114) | discount percent, 0..100 |
+| `platforms` | array of strings | gamegauntlets | 100.0% (190,789) | WIN/MAC/LNX |
+| `developers` | array of strings | gamegauntlets | 99.9% (190,694) | developer names |
+| `publishers` | array of strings | gamegauntlets | 99.8% (190,443) | publisher names |
+| `languages` | array of strings | gamegauntlets | 99.9% (190,595) | interface language names |
+| `voiceovers` | array of strings | gamegauntlets | 44.6% (85,008) | voiceover language names |
+| `categories` | array of strings | gamegauntlets | 100.0% (190,750) | store category tags |
+| `genres` | array of strings | gamegauntlets | 99.9% (190,710) | genre tags |
+| `tags` | array of strings | gamegauntlets | 36.9% (70,337) | community tags |
+| `achievements` | integer | steam | 39.0% (74,388) | achievement count |
+| `steam_reviews_percent` | integer | steam | 62.9% (119,971) | all-time positive review share, 0..100 |
+| `steam_reviews_count` | integer | steam | 63.5% (121,214) | all-time review count |
+| `steam_reviews_label` | string | steam | 41.7% (79,562) | Steam's own label ("Very Positive", ...), null under 10 votes |
+| `steam_recent_percent` | integer | steam | 54.7% (104,279) | last ~30 days positive review share, 0..100 |
+| `steam_recent_count` | integer | steam | 54.7% (104,279) | last ~30 days review count |
+| `steam_recent_label` | string | steam | 5.0% (9,623) | recent-reviews label, null under 10 votes |
+| `steamspy_owners` | integer | steamspy | 48.2% (91,983) | owners estimate, lower bound |
+| `average_playtime_hours` | number | gamegauntlets | 33.2% (63,278) | resolved average playtime, decimal hours |
+| `average_playtime_source` | string | gamegauntlets | 33.2% (63,278) | which source produced average_playtime_hours |
+| `hltb_url` | string | hltb | 25.1% (47,980) | HowLongToBeat page URL |
+| `hltb_main_hours` | number | hltb | 15.1% (28,881) | main story hours, decimal |
+| `hltb_complete_hours` | number | hltb | 100.0% (190,806) | completionist hours, decimal |
+| `gamefaqs_url` | string | gamefaqs | 41.3% (78,769) | GameFAQs product page URL |
+| `gamefaqs_difficulty` | string | gamefaqs | 11.0% (21,052) | GameFAQs difficulty label |
+| `gamefaqs_rating` | number | gamefaqs | 12.0% (22,886) | GameFAQs rating, 0..5 |
+| `metacritic_url` | string | metacritic | 87.2% (166,358) | Metacritic page URL |
+| `metacritic_score` | integer | metacritic | 4.7% (8,959) | critic score, 0..100 |
+| `metacritic_reviews` | integer | metacritic | 4.4% (8,433) | critic review count |
+| `metacritic_user_score` | integer | metacritic | 6.4% (12,305) | user score, 0..100 |
+| `igdb_url` | string | igdb | 60.9% (116,256) | IGDB page URL |
 | `igdb_score` | integer | igdb | 4.1% (7,793) | IGDB critic score, 0..100 |
 | `igdb_user_score` | integer | igdb | 9.9% (18,824) | IGDB user score, 0..100 |
 | `gamerankings_score` | integer | gamerankings | 3.4% (6,485) | critic score, 0..100 |
-| `gg_score` | integer | gamegauntlets | 100.0% (190,451) | Game Gauntlets' own composite score |
-| `gg_points` | integer | gamegauntlets | 100.0% (190,451) | Game Gauntlets priority score (wheel weighting) |
-| `updated_at` | datetime (ISO 8601) | gamegauntlets | 100.0% (190,451) | last time this row changed |
+| `gg_score` | integer | gamegauntlets | 100.0% (190,806) | Game Gauntlets' own composite score |
+| `gg_points` | integer | gamegauntlets | 100.0% (190,806) | Game Gauntlets priority score (wheel weighting) |
+| `updated_at` | datetime (ISO 8601) | gamegauntlets | 100.0% (190,806) | last time this row changed |
 
 ## Example
 
