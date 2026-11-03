@@ -5,7 +5,7 @@ merged from Steam, GOG, SteamSpy, GameFAQs, Metacritic, IGDB, HowLongToBeat, Wik
 
 Updated nightly at 23:48 UTC.
 
-_Generated 2026-11-03T18:53:39.594Z._
+_Generated 2026-11-03T23:49:42.265Z._
 
 ## Download
 
@@ -48,22 +48,22 @@ Previous dump: see the [releases page](https://github.com/leinstay/steamdb/relea
 | `categories` | array of strings | gamegauntlets | 100.0% (197,713) | store category tags |
 | `genres` | array of strings | gamegauntlets | 100.0% (197,685) | genre tags |
 | `tags` | array of strings | gamegauntlets | 35.6% (70,423) | community tags |
-| `achievements` | integer | steam | 38.4% (75,891) | achievement count |
+| `achievements` | integer | steam | 38.4% (75,892) | achievement count |
 | `steam_reviews_percent` | integer | steam | 61.6% (121,821) | all-time positive review share, 0..100 |
 | `steam_reviews_count` | integer | steam | 62.3% (123,181) | all-time review count |
 | `steam_reviews_label` | string | steam | 40.8% (80,781) | Steam's own label ("Very Positive", ...), null under 10 votes |
-| `steam_recent_percent` | integer | steam | 54.7% (108,273) | last ~30 days positive review share, 0..100 |
-| `steam_recent_count` | integer | steam | 54.7% (108,273) | last ~30 days review count |
-| `steam_recent_label` | string | steam | 5.1% (10,136) | recent-reviews label, null under 10 votes |
+| `steam_recent_percent` | integer | steam | 54.8% (108,307) | last ~30 days positive review share, 0..100 |
+| `steam_recent_count` | integer | steam | 54.8% (108,307) | last ~30 days review count |
+| `steam_recent_label` | string | steam | 5.1% (10,128) | recent-reviews label, null under 10 votes |
 | `steamspy_owners` | integer | steamspy | 46.5% (91,983) | owners estimate, lower bound |
 | `average_playtime_hours` | number | gamegauntlets | 35.4% (69,980) | resolved average playtime, decimal hours |
 | `average_playtime_source` | string | gamegauntlets | 35.4% (69,980) | which source produced average_playtime_hours |
 | `hltb_url` | string | hltb | 26.1% (51,531) | HowLongToBeat page URL |
 | `hltb_main_hours` | number | hltb | 15.3% (30,192) | main story hours, decimal |
 | `hltb_complete_hours` | number | hltb | 100.0% (197,781) | completionist hours, decimal |
-| `gamefaqs_url` | string | gamefaqs | 40.1% (79,318) | GameFAQs product page URL |
-| `gamefaqs_difficulty` | string | gamefaqs | 11.7% (23,163) | GameFAQs difficulty label |
-| `gamefaqs_rating` | number | gamefaqs | 12.7% (25,212) | GameFAQs rating, 0..5 |
+| `gamefaqs_url` | string | gamefaqs | 40.1% (79,342) | GameFAQs product page URL |
+| `gamefaqs_difficulty` | string | gamefaqs | 11.7% (23,188) | GameFAQs difficulty label |
+| `gamefaqs_rating` | number | gamefaqs | 12.8% (25,236) | GameFAQs rating, 0..5 |
 | `metacritic_url` | string | metacritic | 86.6% (171,330) | Metacritic page URL |
 | `metacritic_score` | integer | metacritic | 4.6% (9,005) | critic score, 0..100 |
 | `metacritic_reviews` | integer | metacritic | 4.3% (8,475) | critic review count |
